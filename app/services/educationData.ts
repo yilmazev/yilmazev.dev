@@ -6,7 +6,7 @@ const educationData: { education: EducationProps[] } = {
             school: "Ataturk University",
             faculty: "Faculty of Open Education",
             degree: "Associate Degree",
-            fieldOfStudy: "Web design and coding",
+            fieldOfStudy: "Web design and development",
             startDate: "2023 -  Currently"
         },
     ],
