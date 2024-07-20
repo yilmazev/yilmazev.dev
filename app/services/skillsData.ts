@@ -39,7 +39,7 @@ const skillsData: { tabs: TabProps[] } = {
                 {
                     name: "Typescript",
                     color: "bg-sky-600",
-                    progress: 40,
+                    progress: 70,
                     image: ImageTypescript,
                 },
             ],
