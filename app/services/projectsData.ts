@@ -3,6 +3,34 @@ import { ProjectsProps } from "../types/projectTypes"
 const projectsData: { projects: ProjectsProps[] } = {
     projects: [
         {
+            link: "https://artist.makromusic.com",
+            title: "makromusic for Artists",
+            description: "makromusic for Artists is a platform where artists can create their own profiles and share their music with the makromusic mobile app.",
+            used: [
+                {
+                    name: "Next.js",
+                },
+                {
+                    name: "Tailwind",
+                },
+                {
+                    name: "Typescript",
+                },
+                {
+                    name: "Zustand",
+                },
+                {
+                    name: "Axios",
+                },
+                {
+                    name: "Node JS",
+                },
+                {
+                    name: "Internationalization (i18n)",
+                },
+            ],
+        },
+        {
             link: "https://xox.yilmazev.dev/",
             title: "Infinite Tic Tac Toe",
             description: "This project features two modes where you can play either against a bot or with a friend. I aimed to give Tic Tac Toe a different twist in this mini-game. You can try the game alone or with your friends!",

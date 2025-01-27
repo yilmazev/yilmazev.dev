@@ -7,7 +7,17 @@ const experienceData: { experience: ExperienceProps[] } = {
             company: "makromusic",
             description: "I took my first steps to my dream company!",
             workingDate: "2024 - Currently",
-            skills: []
+            skills: [
+                {
+                    name: "Node JS",
+                },
+                {
+                    name: "Go Lang",
+                },
+                {
+                    name: "React Native",
+                },
+            ]
         },
         {
             title: "Frontend Developer",
