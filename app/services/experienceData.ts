@@ -9,6 +9,18 @@ const experienceData: { experience: ExperienceProps[] } = {
             workingDate: "2024 - Currently",
             skills: [
                 {
+                    name: "Next.js",
+                },
+                {
+                    name: "React",
+                },
+                {
+                    name: "Shadcn UI",
+                },
+                {
+                    name: "Typescript",
+                },
+                {
                     name: "Node JS",
                 },
                 {
@@ -16,6 +28,9 @@ const experienceData: { experience: ExperienceProps[] } = {
                 },
                 {
                     name: "React Native",
+                },
+                {
+                    name: "Zustand",
                 },
             ]
         },
