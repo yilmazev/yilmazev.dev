@@ -1,1 +1,8 @@
-{}
+{
+  "navbar_items": [
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Works", "href": "#works" },
+    { "label": "Connect", "href": "#connect" }
+  ]
+}

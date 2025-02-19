@@ -1,21 +1,19 @@
-"use client"
-
-import { useTranslations } from "next-intl"
-import { useThemeStore } from "../stores/useThemeStore"
+import Experience from "../components/Experience"
+import Footer from "../components/Footer"
+import Hero from "../components/Hero"
+import Navbar from "../components/Navbar"
+import Skills from "../components/Skills"
+import Works from "../components/Works"
 
 export default function ThemeToggle() {
-  const t = useTranslations()
-  const { theme, toggleTheme } = useThemeStore()
-
   return (
-    <div className="p-4">
-      <p className="dark:text-white">{t("hello")}</p>
-      <button
-        onClick={toggleTheme}
-        className="p-2 rounded bg-gray-200 dark:bg-gray-800 dark:text-white"
-      >
-        {theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
-      </button>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Skills />
+      <Experience />
+      <Works />
+      <Footer />
+    </>
   )
 }
