@@ -1,10 +1,18 @@
-import IconSparkles from "../assets/icons/sparkles.svg"
+"use client"
 
-export default function Home() {
+import { useThemeStore } from "../stores/useThemeStore"
+
+export default function ThemeToggle() {
+  const { theme, toggleTheme } = useThemeStore()
+
   return (
     <div className="p-4">
-      <h1 className="font-bold float-left mr-1">svgr test</h1>
-      <IconSparkles className="size-6 fill-yellow-400 stroke-yellow-400" />
+      <button
+        onClick={toggleTheme}
+        className="p-2 rounded bg-gray-200 dark:bg-gray-800 dark:text-white"
+      >
+        {theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
+      </button>
     </div>
   )
 }
