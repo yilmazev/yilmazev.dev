@@ -5,9 +5,13 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import { Link as ScrollLink } from "react-scroll"
+import IconMoonStar from "../assets/icons/moon-star.svg"
+import IconSun from "../assets/icons/sun.svg"
 import { navbar_items } from "../data/navbar-items.json"
+import { useThemeStore } from "../stores/useThemeStore"
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useThemeStore()
   const [activeSection, setActiveSection] = useState<string | null>(null)
 
   useEffect(() => {
@@ -70,7 +74,7 @@ const Navbar = () => {
                       <span className={clsx(
                         "relative z-10 text-[0.938rem] transition-colors",
                         isActive
-                          ? "text-neutral-950 dark:text-neutral-50 font-medium"
+                          ? "text-neutral-950 dark:text-neutral-50"
                           : "text-neutral-500 dark:text-neutral-400"
                       )}>
                         {item.label}
@@ -80,6 +84,25 @@ const Navbar = () => {
                 </li>
               )
             })}
+            <li className="mx-1" />
+            <li>
+              <button
+                onClick={toggleTheme}
+                className="relative w-12 h-6 flex items-center bg-white border border-black/5 dark:bg-neutral-900 dark:border-white/15 rounded-full transition-all"
+              >
+                <div
+                  className={clsx(
+                    "absolute left-px flex items-center justify-center size-5 bg-black/5 dark:bg-neutral-950 rounded-full transition-all",
+                    { "translate-x-6": theme === "dark" }
+                  )}
+                >
+                  {theme === "dark"
+                    ? <IconMoonStar className="size-3 text-neutral-50" />
+                    : <IconSun className="size-3 text-neutral-950" />
+                  }
+                </div>
+              </button>
+            </li>
           </ul>
         </nav>
       </div>
