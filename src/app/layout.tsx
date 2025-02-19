@@ -1,14 +1,11 @@
 import type { Metadata } from "next"
 import { NextIntlClientProvider } from "next-intl"
 import { getLocale, getMessages } from "next-intl/server"
-import { Geist } from "next/font/google"
+import { Rubik } from "next/font/google"
 import ThemeProvider from "../components/ThemeProvider"
 import "../styles/globals.css"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: [ "latin" ]
-})
+const rubik = Rubik({ subsets: [ "latin" ], weight: [ "300", "400", "500", "600", "700", "800", "900" ] })
 
 export const metadata: Metadata = {
   title: "Open-Source Portfolio",
@@ -21,7 +18,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
 
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased bg-white dark:bg-black`}>
+      <body className={`${rubik.className} antialiased bg-white dark:bg-black min-h-screen overflow-x-hidden`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider>
             {children}
