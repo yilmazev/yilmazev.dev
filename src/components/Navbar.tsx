@@ -8,11 +8,14 @@ import { Link as ScrollLink } from "react-scroll"
 import IconMoonStar from "../assets/icons/moon-star.svg"
 import IconSun from "../assets/icons/sun.svg"
 import { navbar_items } from "../data/navbar-items.json"
+import { useProfileStore } from "../stores/useProfileStore"
 import { useThemeStore } from "../stores/useThemeStore"
 
 const Navbar = () => {
   const { theme, toggleTheme } = useThemeStore()
-  const [activeSection, setActiveSection] = useState<string | null>(null)
+  const { fullName, avatar } = useProfileStore()
+
+  const [ activeSection, setActiveSection ] = useState<string | null>(null)
 
   useEffect(() => {
     const observerOptions = {
@@ -40,17 +43,17 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 flex justify-center w-full z-50">
       <div className="container">
-        <nav className="flex items-center justify-between my-6 mx-2 px-4 py-3 bg-white border border-black/5 rounded-full dark:bg-neutral-950 dark:border-white/15">
+        <nav className="flex items-center justify-between my-6 mx-2 px-4 py-3 bg-white border border-black/5 rounded-full dark:bg-black dark:border-white/15">
           <div className="flex items-center gap-2">
             <Image
-              src="/images/avatar.jpeg"
-              alt="Yılmaz Ev"
+              src={avatar}
+              alt={fullName}
               width={36}
               height={36}
               quality={100}
               className="shrink-0 rounded-full bg-black/10 dark:bg-white/10"
             />
-            <span className="text-neutral-950 dark:text-neutral-50 font-semibold">Yılmaz Ev</span>
+            <span className="text-neutral-950 dark:text-neutral-100 font-semibold">{fullName}</span>
           </div>
           <ul className="flex items-center gap-1">
             {navbar_items.map((item, index) => {
@@ -74,7 +77,7 @@ const Navbar = () => {
                       <span className={clsx(
                         "relative z-10 text-[0.938rem] transition-colors",
                         isActive
-                          ? "text-neutral-950 dark:text-neutral-50"
+                          ? "text-neutral-950 dark:text-neutral-100"
                           : "text-neutral-500 dark:text-neutral-400"
                       )}>
                         {item.label}
@@ -97,7 +100,7 @@ const Navbar = () => {
                   )}
                 >
                   {theme === "dark"
-                    ? <IconMoonStar className="size-3 text-neutral-50" />
+                    ? <IconMoonStar className="size-3 text-neutral-100" />
                     : <IconSun className="size-3 text-neutral-950" />
                   }
                 </div>
