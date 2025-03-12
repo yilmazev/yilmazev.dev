@@ -4,7 +4,7 @@ This is an **open-source Next.js-based web application** that allows you to **ea
 
 ---
 
-## 🚀 **Edit data**
+## 📝 **Edit data**
 
 To edit the data with your own information, edit the .json format files in the **src/data** folder.
 
