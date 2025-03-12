@@ -10,7 +10,7 @@ import { useProfileStore } from "../stores/useProfileStore"
 
 const Footer = () => {
   const t = useTranslations()
-  const { email } = useProfileStore()
+  const { email, social } = useProfileStore()
 
   return (
     <footer id="connect" className="flex items-center justify-center py-4">
@@ -39,12 +39,18 @@ const Footer = () => {
           <div className="w-full">
             <p className="text-neutral-500 dark:text-neutral-400 mb-3">Follow</p>
             <div className="flex gap-2">
-              <Link href="#" className="border size-11 flex items-center justify-center rounded-xl text-neutral-800 border-neutral-300 hover:bg-neutral-50 dark:text-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-all">
-                <IconGithub className="size-6" />
-              </Link>
-              <Link href="#" className="border size-11 flex items-center justify-center rounded-xl text-neutral-800 border-neutral-300 hover:bg-neutral-50 dark:text-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-all">
-                <IconLinkedIn className="size-6" />
-              </Link>
+              {social.map((item, index) => {
+                const icon = {
+                  github: <IconGithub className="size-6" />,
+                  linkedin: <IconLinkedIn className="size-6" />
+                }[item.platform.toLocaleLowerCase()]
+
+                return (
+                  <Link key={index} href={item.link} target="_blank" title={item.platform} className="border size-10 flex items-center justify-center rounded-xl text-neutral-800 border-neutral-300 hover:bg-neutral-50 dark:text-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-all">
+                    {icon}
+                  </Link>
+                )
+              })}
             </div>
           </div>
         </div>

@@ -2,6 +2,16 @@
   "profile": {
     "email": "yilmaz.ev@outlook.com",
     "full_name": "Yılmaz Ev",
-    "avatar": "/images/avatar.jpeg"
+    "avatar": "/images/avatar.jpeg",
+    "social": [
+      {
+        "platform": "Github",
+        "link": "https://github.com/yilmazev"
+      },
+      {
+        "platform": "LinkedIn",
+        "link": "https://linkedin.com/in/yilmazev"
+      }
+    ]
   }
 }
