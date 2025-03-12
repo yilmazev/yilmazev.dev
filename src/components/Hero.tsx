@@ -38,7 +38,7 @@ const Hero = () => {
       moveY: useTransform(scrollYProgress, [ 0, 0.2 ], [ 0, 800 ])
     },
     {
-      icon: <IconGlobe className=":size-7" />,
+      icon: <IconGlobe className="size-7" />,
       label: t("hero_term_3"),
       className: "-rotate-6 right-0 top-14 from-yellow-200 to-yellow-300 text-yellow-700 dark:from-yellow-300 dark:to-yellow-500 dark:text-yellow-900",
       moveX: useTransform(scrollYProgress, [ 0, 0.2 ], [ 0, 900 ]),
