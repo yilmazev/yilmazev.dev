@@ -12,7 +12,7 @@ This is an **open-source Next.js-based web application** that allows you to **ea
 - [x] Hero section
 - [x] Skills section
 - [x] Experience section
-- [ ] Works section
+- [x] Works section
 - [ ] Footer component
 
 ---
