@@ -1,3 +1,10 @@
+"use client"
+
+import { works } from "@/data/works.json"
+import Image from "next/image"
+import Link from "next/link"
+import IconMoveRight from "../assets/icons/move-right.svg"
+
 const Works = () => {
   return (
     <section id="works" className="flex items-center justify-center py-4">
@@ -6,14 +13,32 @@ const Works = () => {
           Selected works
         </h2>
         <div className="flex flex-col gap-12 w-full">
-          <div className="flex gap-4 w-full h-96">
-            <div className="rounded-3xl border border-black/5 dark:border-white/15 w-2/6 p-4">
-              <h3 className="text-2xl font-medium">makromusic for Artists</h3>
+          {works.map((work, index) => (
+            <div key={index} className="flex gap-4 w-full h-[40rem]">
+              <div className="flex flex-col justify-between rounded-3xl border border-black/5 dark:border-white/15 w-2/6 p-6">
+                <div>
+                  <h3 className="text-3xl mb-2">{work.title}</h3>
+                  <p className="text-neutral-500 dark:text-neutral-400">{work.description}</p>
+                </div>
+                <div>
+                  <Link
+                    href={work.link}
+                    target="_blank"
+                    title={work.title}
+                    className="flex items-center justify-between gap-2 px-5 py-3 hover:bg-neutral-50 hover:dark:bg-neutral-950 border border-neutral-300 dark:border-neutral-800 rounded-full transition-all"
+                  >
+                    <span>Open case</span>
+                    <IconMoveRight className="size-7" />
+                  </Link>
+                </div>
+              </div>
+              <div className="p-6 w-full bg-neutral-50 dark:bg-neutral-950 border rounded-3xl border-black/5 dark:border-white/15">
+                <div className="relative size-full p-6 overflow-hidden rounded-3xl">
+                  <Image src={work.image} alt={work.title} className="object-cover" fill />
+                </div>
+              </div>
             </div>
-            <div className="w-full bg-neutral-50 dark:bg-neutral-950 border rounded-3xl border-black/5 dark:border-white/15">
-              image
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

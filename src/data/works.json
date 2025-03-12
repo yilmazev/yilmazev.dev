@@ -1,1 +1,22 @@
-{}
+{
+  "works": [
+    {
+      "title": "makromusic for Artists",
+      "description": "makromusic for Artists is a platform where artists can create their own profiles and share their music with the makromusic mobile app.",
+      "image": "/images/works/makromusic-for-artists.png",
+      "link": "https://artists.makromusic.com/"
+    },
+    {
+      "title": "Markview",
+      "description": "Markview is a tool that enables users to quickly and easily create Markdown files and instantly preview their content in a stylish format. It is ideal for enhancing your project's documentation or creating README files with ease.",
+      "image": "/images/works/markview.png",
+      "link": "https://github.com/yilmazev/markview"
+    },
+    {
+      "title": "PsikologOfisi",
+      "description": "I built the Psikologofisi project completely from scratch. I took on tasks such as pixel-perfect coding of existing designs and making RestAPI connections. In this project, I prioritized user experience and paid attention to details.",
+      "image": "/images/works/psikologofisi.png",
+      "link": "https://www.psikologofisi.com"
+    }
+  ]
+}
