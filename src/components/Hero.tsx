@@ -38,7 +38,7 @@ const Hero = () => {
       moveY: useTransform(scrollYProgress, [ 0, 0.2 ], [ 0, 800 ])
     },
     {
-      icon: <IconGlobe className="size-7" />,
+      icon: <IconGlobe className=":size-7" />,
       label: t("hero_term_3"),
       className: "-rotate-6 right-0 top-14 from-yellow-200 to-yellow-300 text-yellow-700 dark:from-yellow-300 dark:to-yellow-500 dark:text-yellow-900",
       moveX: useTransform(scrollYProgress, [ 0, 0.2 ], [ 0, 900 ]),
@@ -59,19 +59,19 @@ const Hero = () => {
   }, [ isInView ])
 
   return (
-    <section id="hero" className="relative flex items-center justify-center py-4 overflow-hidden">
-      <div className="container flex items-center h-[calc(100vh-2rem)] bg-neutral-50 dark:bg-neutral-950 border border-neutral-100 rounded-3xl dark:border-neutral-900">
-        <div className="relative flex flex-col px-20 w-full xl:w-3/4">
-          <p className="text-neutral-600 dark:text-neutral-300 text-3xl mb-4">{t("hero_hello")}</p>
-          <h1 className="text-5xl leading-[1.2] font-medium">{t("hero_description")}</h1>
+    <section id="hero" className="relative flex items-center justify-center py-4 px-2 overflow-hidden">
+      <div className="container flex items-center justify-center lg:h-[calc(100vh-2rem)] pt-32 pb-16 lg:pt-0 lg:pb-0 bg-neutral-50 dark:bg-neutral-950 border border-neutral-100 rounded-3xl dark:border-neutral-900">
+        <div className="relative flex flex-col px-4 lg:px-20 w-full lg:w-3/4">
+          <p className="text-neutral-600 dark:text-neutral-300 text-xl mb-2 lg:mb-4">{t("hero_hello")}</p>
+          <h1 className="text-3xl lg:text-5xl lg:leading-[1.2] font-medium">{t("hero_description")}</h1>
           <div className="flex justify-between">
-            <div className="flex items-center gap-2 mt-8">
-              <Link href={`mailto:${email}`} className="flex items-center justify-center gap-2 px-6 py-4 min-w-20 hover:bg-neutral-100 hover:dark:bg-neutral-900 border border-neutral-950 dark:border-neutral-100 rounded-full transition-all">
-                <span className="text-xl">{t("hero_btn_email")}</span>
-                <IconMoveRight className="size-7" />
+            <div className="flex items-center gap-2 mt-6 lg:mt-8">
+              <Link href={`mailto:${email}`} className="flex items-center justify-center gap-2 px-5 py-3 lg:px-6 lg:py-4 min-w-20 hover:bg-neutral-100 hover:dark:bg-neutral-900 border border-neutral-950 dark:border-neutral-100 rounded-full transition-all">
+                <span className="text-base lg:text-xl">{t("hero_btn_email")}</span>
+                <IconMoveRight className="size-5 lg:size-7" />
               </Link>
             </div>
-            <div ref={containerRef} className="relative top-20 -right-20 flex items-center justify-center">
+            <div ref={containerRef} className="hidden lg:flex relative top-20 -right-20 items-center justify-center">
               {terms.map((item, index) => (
                 <motion.div
                   key={index}
@@ -79,7 +79,7 @@ const Hero = () => {
                   className={clsx("absolute flex items-center gap-2 bg-gradient-to-b font-medium py-4 px-7 rounded-2xl select-none transition-all", item.className)}
                 >
                   {item.icon}
-                  <span className="text-2xl">{item.label}</span>
+                  <span className="text-xl">{item.label}</span>
                 </motion.div>
               ))}
             </div>

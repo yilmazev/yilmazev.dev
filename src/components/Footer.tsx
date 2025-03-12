@@ -13,40 +13,40 @@ const Footer = () => {
   const { email, social } = useProfileStore()
 
   return (
-    <footer id="connect" className="flex items-center justify-center py-4">
-      <div className="container flex flex-col px-20 py-40 border border-neutral-100 rounded-3xl dark:border-neutral-900">
+    <footer id="connect" className="flex items-center justify-center lg:py-4 p-2">
+      <div className="container flex flex-col p-4 lg:px-20 lg:py-40 border border-neutral-100 rounded-3xl dark:border-neutral-900">
         <div className="flex flex-col items-start">
-          <h2 className="flex flex-col gap-8 text-4xl leading-[1.2] w-4/6 mb-12">
+          <h2 className="flex flex-col gap-8 text-xl lg:text-4xl lg:leading-[1.2] lg:w-4/6 mb-6 lg:mb-12">
             <span>Ready to bring your ideas to life with innovative development solutions?</span>
-            <span className="flex items-center gap-4">
+            <span className="flex items-center gap-1">
               Let's build something amazing together
-              <IconSparkles className="fill-yellow-400 stroke-yellow-400 dark:fill-yellow-500 dark:stroke-yellow-500 size-9" />
+              <IconSparkles className="fill-yellow-400 stroke-yellow-400 dark:fill-yellow-500 dark:stroke-yellow-500 size-9 hidden lg:block" />
             </span>
           </h2>
           <Link href={`mailto:${email}`} className="flex items-center justify-center gap-2 px-6 py-4 min-w-20 bg-neutral-900 hover:bg-neutral-950 text-white dark:bg-neutral-50 hover:dark:bg-neutral-100 dark:text-neutral-950 rounded-full transition-all">
-            <span className="text-xl">{t("hero_btn_email")}</span>
-            <IconMoveRight className="size-7" />
+            <span className="text-base lg:text-xl">{t("hero_btn_email")}</span>
+            <IconMoveRight className="size-6 lg:size-7" />
           </Link>
         </div>
         <hr className="my-12 border-neutral-200 dark:border-neutral-800" />
-        <div className="flex justify-between">
+        <div className="flex lg:flex-row flex-col lg:justify-between gap-4">
           <div className="w-full">
-            <p className="text-neutral-500 dark:text-neutral-400 mb-3">Connect</p>
+            <p className="text-sm lg:text-base text-neutral-500 dark:text-neutral-400 mb-1 lg:mb-3">Connect</p>
             <Link href={`mailto:${email}`}>
-              <span className="text-xl">{email}</span>
+              <span className="text-lg lg:text-xl">{email}</span>
             </Link>
           </div>
           <div className="w-full">
-            <p className="text-neutral-500 dark:text-neutral-400 mb-3">Follow</p>
-            <div className="flex gap-2">
+            <p className="text-sm lg:text-base text-neutral-500 dark:text-neutral-400 mb-1 lg:mb-3">Follow</p>
+            <div className="flex flex-wrap gap-2">
               {social.map((item, index) => {
                 const icon = {
-                  github: <IconGithub className="size-6" />,
-                  linkedin: <IconLinkedIn className="size-6" />
+                  github: <IconGithub className="size-5 lg:size-6" />,
+                  linkedin: <IconLinkedIn className="size-5 lg:size-6" />
                 }[item.platform.toLocaleLowerCase()]
 
                 return (
-                  <Link key={index} href={item.link} target="_blank" title={item.platform} className="border size-10 flex items-center justify-center rounded-xl text-neutral-800 border-neutral-300 hover:bg-neutral-50 dark:text-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-all">
+                  <Link key={index} href={item.link} target="_blank" title={item.platform} className="border size-9 lg:size-10 flex items-center justify-center rounded-xl text-neutral-800 border-neutral-300 hover:bg-neutral-50 dark:text-neutral-100 dark:border-neutral-800 dark:hover:bg-neutral-900 transition-all">
                     {icon}
                   </Link>
                 )

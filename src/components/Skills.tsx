@@ -10,11 +10,11 @@ const Skills = () => {
 
   return (
     <section id="skills" className="flex items-center justify-center py-4">
-      <div className="container flex flex-col items-center justify-center pt-28 pb-56">
-        <h2 className="text-5xl leading-[1] font-medium text-center w-3/6 mb-10">
+      <div className="container flex flex-col items-center justify-center lg:pt-28 lg:pb-56">
+        <h2 className="text-3xl lg:text-5xl lg:leading-[1] font-medium text-center w-4/6 lg:w-3/6 mb-10">
           {t("skills_title")}
         </h2>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center translate-x-12 lg:flex-row flex-col">
           {skillsData.skills.map((category, index) => {
             const styles = {
               0: "from-lime-300 to-lime-50 text-lime-800 z-0 dark:from-lime-600 dark:to-lime-300 dark:text-lime-900",
