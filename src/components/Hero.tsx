@@ -71,8 +71,6 @@ const Hero = () => {
                 <IconMoveRight className="size-7" />
               </Link>
             </div>
-
-            {/* Animated Terms */}
             <div ref={containerRef} className="relative top-20 -right-20 flex items-center justify-center">
               {terms.map((item, index) => (
                 <motion.div

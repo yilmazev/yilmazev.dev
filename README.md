@@ -6,18 +6,18 @@ This is an **open-source Next.js-based web application** that allows you to **ea
 
 ## 📌 **To-Do List**
 
-- [x] Multi-language support  
-- [x] Theme switcher  
-- [x] Navbar component  
-- [x] Hero section  
-- [ ] Skills section  
-- [ ] Experience section  
-- [ ] Works section  
-- [ ] Footer component  
+- [x] Multi-language support
+- [x] Theme switcher
+- [x] Navbar component
+- [x] Hero section
+- [x] Skills section
+- [ ] Experience section
+- [ ] Works section
+- [ ] Footer component
 
 ---
 
-## 🚀 **Installation & Usage**  
+## 🚀 **Installation & Usage**
 
 **Clone the project:**
 
@@ -47,17 +47,19 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 ---
 
 ## **🤝 Contributing**
-- Fork the repository  
-- Create a new branch (feature/new-feature)  
-- Commit your changes  
-- Open a Pull Request 🎉  
+
+- Fork the repository
+- Create a new branch (feature/new-feature)
+- Commit your changes
+- Open a Pull Request 🎉
 
 ---
 
 ## **🔧 Technologies Used**
-- NextJS v15  
-- Tailwind CSS  
-- Zustand  
-- Framer Motion  
-- Internationalization (i18n)  
-- Typescript  
+
+- NextJS v15
+- Tailwind CSS
+- Zustand
+- Framer Motion
+- Internationalization (i18n)
+- Typescript
