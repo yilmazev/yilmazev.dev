@@ -11,7 +11,7 @@ This is an **open-source Next.js-based web application** that allows you to **ea
 - [x] Navbar component
 - [x] Hero section
 - [x] Skills section
-- [ ] Experience section
+- [x] Experience section
 - [ ] Works section
 - [ ] Footer component
 

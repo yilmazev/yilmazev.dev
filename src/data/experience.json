@@ -1,1 +1,16 @@
-{}
+{
+  "experience": [
+    {
+      "company": "makromusic",
+      "date": "Mar 2024 - Currently"
+    },
+    {
+      "company": "PsikologOfisi",
+      "date": "Mar 2023 - Jan 2024"
+    },
+    {
+      "company": "Freelancer",
+      "date": "Jan 2020 - Mar 2024"
+    }
+  ]
+}
