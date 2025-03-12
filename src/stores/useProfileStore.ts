@@ -1,5 +1,5 @@
 import { create } from "zustand"
-import { profile } from "../data/profile.json"
+import profileData from "../data/profile.json"
 
 interface ISocial {
   platform: string;
@@ -15,9 +15,9 @@ interface IProfileStore {
 
 export const useProfileStore = create<IProfileStore>(() => {
   return {
-    email: profile.email,
-    fullName: profile.full_name,
-    avatar: profile.avatar,
-    social: profile.social
+    email: profileData.profile.email,
+    fullName: profileData.profile.full_name,
+    avatar: profileData.profile.avatar,
+    social: profileData.profile.social
   }
 })

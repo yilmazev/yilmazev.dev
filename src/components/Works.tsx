@@ -1,6 +1,6 @@
 "use client"
 
-import { works } from "@/data/works.json"
+import worksData from "@/data/works.json"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 import Link from "next/link"
@@ -16,7 +16,7 @@ const Works = () => {
           {t("works_title")}
         </h2>
         <div className="flex flex-col gap-12 w-full">
-          {works.map((work, index) => (
+          {worksData.works.map((work, index) => (
             <div key={index} className="flex gap-4 w-full h-[40rem]">
               <div className="flex flex-col justify-between rounded-3xl border border-neutral-100 dark:border-neutral-900 w-2/6 p-6">
                 <div>

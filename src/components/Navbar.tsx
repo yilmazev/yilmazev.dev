@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 import { Link as ScrollLink } from "react-scroll"
 import IconMoonStar from "../assets/icons/moon-star.svg"
 import IconSun from "../assets/icons/sun.svg"
-import { navbar_items } from "../data/navbar-items.json"
+import navbarItemsData from "../data/navbar-items.json"
 import { useProfileStore } from "../stores/useProfileStore"
 import { useThemeStore } from "../stores/useThemeStore"
 
@@ -32,7 +32,7 @@ const Navbar = () => {
       })
     }, observerOptions)
 
-    navbar_items.forEach((item) => {
+    navbarItemsData.navbar_items.forEach((item) => {
       const section = document.getElementById(item.href.replace("#", ""))
       if (section) observer.observe(section)
     })
@@ -56,7 +56,7 @@ const Navbar = () => {
             <span className="font-semibold">{fullName}</span>
           </div>
           <ul className="flex items-center gap-1">
-            {navbar_items.map((item, index) => {
+            {navbarItemsData.navbar_items.map((item, index) => {
               const isActive = activeSection === item.href.replace("#", "")
               return (
                 <li key={index}>

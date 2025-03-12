@@ -1,6 +1,6 @@
 "use client"
 
-import { skills } from "@/data/skills.json"
+import skillsData from "@/data/skills.json"
 import clsx from "clsx"
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
@@ -15,7 +15,7 @@ const Skills = () => {
           {t("skills_title")}
         </h2>
         <div className="flex items-center justify-center">
-          {skills.map((category, index) => {
+          {skillsData.skills.map((category, index) => {
             const styles = {
               0: "from-lime-300 to-lime-50 text-lime-800 z-0 dark:from-lime-600 dark:to-lime-300 dark:text-lime-900",
               1: "from-purple-300 to-purple-50 text-purple-800 z-[1] dark:from-purple-600 dark:to-purple-300 dark:text-purple-900",

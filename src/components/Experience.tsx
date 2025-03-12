@@ -1,6 +1,6 @@
 "use client"
 
-import { experience } from "@/data/experience.json"
+import experienceData from "@/data/experience.json"
 import clsx from "clsx"
 import { useTranslations } from "next-intl"
 
@@ -14,7 +14,7 @@ const Experience = () => {
           {t("experience_title")}
         </h2>
         <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
-          {experience.map((item, index) => {
+          {experienceData.experience.map((item, index) => {
             const isReverse = index % 2 === 1
 
             const Line = () => (
