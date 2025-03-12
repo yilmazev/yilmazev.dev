@@ -60,7 +60,7 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative flex items-center justify-center py-4 overflow-hidden">
-      <div className="container flex items-center h-[calc(100vh-2rem)] bg-neutral-50 dark:bg-neutral-950 border border-black/5 rounded-3xl dark:border-white/15">
+      <div className="container flex items-center h-[calc(100vh-2rem)] bg-neutral-50 dark:bg-neutral-950 border border-neutral-100 rounded-3xl dark:border-neutral-900">
         <div className="relative flex flex-col px-20 w-full xl:w-3/4">
           <p className="text-neutral-600 dark:text-neutral-300 text-3xl mb-4">{t("hero_hello")}</p>
           <h1 className="text-5xl leading-[1.2] font-medium">{t("hero_description")}</h1>

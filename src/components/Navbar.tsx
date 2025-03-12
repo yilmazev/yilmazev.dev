@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 flex justify-center w-full z-50">
       <div className="container">
-        <nav className="flex items-center justify-between my-6 mx-2 px-4 py-3 bg-white border border-black/5 rounded-full dark:bg-black dark:border-white/15">
+        <nav className="flex items-center justify-between my-6 mx-2 px-4 py-3 bg-white border border-neutral-100 rounded-full dark:bg-black dark:border-neutral-900">
           <div className="flex items-center gap-2">
             <Image
               src={avatar}
@@ -51,7 +51,7 @@ const Navbar = () => {
               width={36}
               height={36}
               quality={100}
-              className="shrink-0 rounded-full bg-black/10 dark:bg-white/10"
+              className="shrink-0 rounded-full bg-neutral-200 dark:bg-neutral-900"
             />
             <span className="font-semibold">{fullName}</span>
           </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
                       {isActive && (
                         <motion.div
                           layoutId="activeNavBackground"
-                          className="absolute inset-0 border border-black/5 dark:border-white/15 rounded-full"
+                          className="absolute inset-0 border border-neutral-100 dark:border-neutral-900 rounded-full"
                           transition={{ type: "spring", stiffness: 300, damping: 30 }}
                         />
                       )}
@@ -91,11 +91,11 @@ const Navbar = () => {
             <li>
               <button
                 onClick={toggleTheme}
-                className="relative w-12 h-6 flex items-center bg-white border border-black/5 dark:bg-neutral-900 dark:border-white/15 rounded-full transition-all"
+                className="relative w-12 h-6 flex items-center bg-white border border-neutral-100 dark:bg-neutral-900 dark:border-neutral-900 rounded-full transition-all"
               >
                 <div
                   className={clsx(
-                    "absolute left-px flex items-center justify-center size-5 bg-black/5 dark:bg-neutral-950 rounded-full transition-all",
+                    "absolute left-px flex items-center justify-center size-5 bg-neutral-50 dark:bg-neutral-950 rounded-full transition-all",
                     { "translate-x-6": theme === "dark" }
                   )}
                 >

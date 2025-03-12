@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <footer id="connect" className="flex items-center justify-center py-4">
-      <div className="container flex flex-col px-20 py-40 bg-white border border-black/5 rounded-3xl dark:bg-neutral-950 dark:border-white/15">
+      <div className="container flex flex-col px-20 py-40 border border-neutral-100 rounded-3xl dark:border-neutral-900">
         <div className="flex flex-col items-start">
           <h2 className="flex flex-col gap-8 text-4xl leading-[1.2] w-4/6 mb-12">
             <span>Ready to bring your ideas to life with innovative development solutions?</span>

@@ -46,7 +46,7 @@ const Skills = () => {
                   delay: index * 0.2
                 }}
                 className={clsx(
-                  "h-fit w-80 border border-black/10 rounded-xl overflow-hidden dark:border-white/20",
+                  "h-fit w-80 border border-neutral-200 rounded-xl overflow-hidden dark:border-neutral-800",
                   styles
                 )}
               >
@@ -56,7 +56,7 @@ const Skills = () => {
                 <div className="w-full bg-white dark:bg-neutral-950">
                   <ul className="text-lg text-neutral-950 dark:text-neutral-100">
                     {category.skills.map((skill, i) => (
-                      <li key={i} className="py-2 px-4 border-b border-black/10 dark:border-white/20 last:border-0">
+                      <li key={i} className="py-2 px-4 border-b border-neutral-200 dark:border-neutral-800 last:border-0">
                         {skill}
                       </li>
                     ))}
