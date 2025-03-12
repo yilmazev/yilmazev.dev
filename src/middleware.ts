@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 
-const locales = [ "en", "tr" ]
+const locales = ["en"]
 const defaultLocale = "en"
 
 export default async function middleware(req: NextRequest) {
@@ -28,5 +28,5 @@ export default async function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: [ "/((?!api|_next/static|_next/image|favicon.ico).*)" ]
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"]
 }
