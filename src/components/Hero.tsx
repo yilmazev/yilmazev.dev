@@ -63,10 +63,10 @@ const Hero = () => {
       <div className="container flex items-center h-[calc(100vh-2rem)] bg-neutral-50 dark:bg-neutral-950 border border-black/5 rounded-3xl dark:border-white/15">
         <div className="relative flex flex-col px-20 w-full xl:w-3/4">
           <p className="text-neutral-600 dark:text-neutral-300 text-3xl mb-4">{t("hero_hello")}</p>
-          <h1 className="text-neutral-950 dark:text-neutral-100 text-5xl leading-[1.2] font-medium">{t("hero_description")}</h1>
+          <h1 className="text-5xl leading-[1.2] font-medium">{t("hero_description")}</h1>
           <div className="flex justify-between">
             <div className="flex items-center gap-2 mt-8">
-              <Link href={`mailto:${email}`} className="flex items-center justify-center gap-2 px-6 py-4 min-w-20 text-neutral-950 dark:text-neutral-100 hover:bg-neutral-100 hover:dark:bg-neutral-900 border border-neutral-950 dark:border-neutral-100 rounded-full transition-all">
+              <Link href={`mailto:${email}`} className="flex items-center justify-center gap-2 px-6 py-4 min-w-20 hover:bg-neutral-100 hover:dark:bg-neutral-900 border border-neutral-950 dark:border-neutral-100 rounded-full transition-all">
                 <span className="text-xl">{t("hero_btn_email")}</span>
                 <IconMoveRight className="size-7" />
               </Link>

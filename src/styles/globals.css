@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
+  @apply scroll-smooth;
+}
+
+body {
+  @apply text-neutral-950 dark:text-neutral-100;
 }

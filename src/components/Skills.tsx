@@ -11,7 +11,7 @@ const Skills = () => {
   return (
     <section id="skills" className="flex items-center justify-center py-4">
       <div className="container flex flex-col items-center justify-center pt-28 pb-56">
-        <h2 className="text-neutral-950 dark:text-neutral-100 text-5xl leading-[1] font-medium text-center w-3/6 mb-10">
+        <h2 className="text-5xl leading-[1] font-medium text-center w-3/6 mb-10">
           {t("skills_title")}
         </h2>
         <div className="flex items-center justify-center">

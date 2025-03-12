@@ -53,7 +53,7 @@ const Navbar = () => {
               quality={100}
               className="shrink-0 rounded-full bg-black/10 dark:bg-white/10"
             />
-            <span className="text-neutral-950 dark:text-neutral-100 font-semibold">{fullName}</span>
+            <span className="font-semibold">{fullName}</span>
           </div>
           <ul className="flex items-center gap-1">
             {navbar_items.map((item, index) => {
