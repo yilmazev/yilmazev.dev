@@ -4,16 +4,9 @@ This is an **open-source Next.js-based web application** that allows you to **ea
 
 ---
 
-## 📌 **To-Do List**
+## 🚀 **Edit data**
 
-- [x] Multi-language support
-- [x] Theme switcher
-- [x] Navbar component
-- [x] Hero section
-- [x] Skills section
-- [x] Experience section
-- [x] Works section
-- [ ] Footer component
+To edit the data with your own information, edit the .json format files in the **src/data** folder.
 
 ---
 
