@@ -1,6 +1,12 @@
 {
   "works": [
     {
+      "title": "BabyLens",
+      "description": "BabyLens is an AI-powered mobile app that generates realistic baby photos using photos of two parents. I developed both the frontend and backend of the app, integrating image processing, subscription logic, and a smooth user experience.",
+      "image": "/images/works/babylens.png",
+      "link": "https://apps.apple.com/app/id6745229750"
+    },
+    {
       "title": "makromusic for Artists",
       "description": "makromusic for Artists is a platform where artists can create their own profiles and share their music with the makromusic mobile app.",
       "image": "/images/works/makromusic-for-artists.png",

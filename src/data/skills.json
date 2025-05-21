@@ -2,18 +2,23 @@
   "skills": [
     {
       "title": "languages",
-      "skills": ["HTML5", "CSS3", "JavaScript", "TypeScript"]
+      "skills": ["HTML5", "CSS3", "JavaScript", "TypeScript", "GoLang"]
     },
     {
       "title": "frameworks",
       "skills": [
         "React",
+        "React Native (with Expo)",
         "Next.js",
         "Bootstrap 5",
         "Tailwind",
         "Sass",
         "Styled Components"
       ]
+    },
+    {
+      "title": "database",
+      "skills": ["MongoDB", "PostgreSQL"]
     },
     {
       "title": "tools",
