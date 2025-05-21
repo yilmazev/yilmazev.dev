@@ -9,8 +9,8 @@ import "../styles/globals.css"
 const rubik = Rubik({ subsets: [ "latin" ], weight: [ "300", "400", "500", "600", "700", "800", "900" ] })
 
 export const metadata: Metadata = {
-  title: "Yilmaz Ev - Frontend Developer",
-  description: "I am a frontend developer who creates user-friendly and smooth interfaces."
+  title: "Yilmaz Ev - Fullstack Developer",
+  description: "I am a fullstack developer who creates user-friendly and smooth interfaces."
 }
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
