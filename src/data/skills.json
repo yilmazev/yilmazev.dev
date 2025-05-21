@@ -17,12 +17,8 @@
       ]
     },
     {
-      "title": "database",
-      "skills": ["MongoDB", "PostgreSQL"]
-    },
-    {
       "title": "tools",
-      "skills": ["Git", "Jira", "ESLint", "Figma"]
+      "skills": ["Git", "Jira", "ESLint", "Figma", "DataGrip", "Termius"]
     }
   ]
 }
